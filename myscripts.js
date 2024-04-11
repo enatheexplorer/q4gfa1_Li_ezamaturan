@@ -175,7 +175,6 @@ function results() {
 	var nameUser = userName.value;
 	var password12 = pw1.value;
 	var writeInterests = interests.value; 
-	var heightSame = document.getElementById("main").offsetHeight;
 	
 	userDetails.innerHTML = "Full Name: " + name + "</br></br>";
 	userDetails.innerHTML += "Gender: " + userGender + "</br></br>";
@@ -186,8 +185,14 @@ function results() {
 	userDetails.innerHTML += "Password: " + password12 + "</br></br>";
 	userDetails.innerHTML += 'Interest/s: "' + writeInterests + '"</br></br>';
 	document.getElementById("body").style.overflowY = "scroll";
-	document.getElementById("background").style.height = heightSame + "px";
+	adjustBackgroundHeight();
+	setTimeout(adjustBackgroundHeight, 100);
 	return false;
+}
+
+function adjustBackgroundHeight() {
+    var heightSame = document.getElementById("main").offsetHeight;
+    document.getElementById("background").style.height = heightSame + "px";
 }
 
 function getName() {
