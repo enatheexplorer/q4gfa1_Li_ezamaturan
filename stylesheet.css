@@ -1,0 +1,73 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color:#ECDCC9;
+}
+
+#background{
+	height: 100vh;
+	width: 61vw;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+
+#main{
+	width: 50vw;
+	background-color:#ECDCC9;
+	border-top-right-radius: 20%;
+	border-bottom-right-radius: 20%;
+	padding: 1vw;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#input{
+	width: 45vw;
+}
+
+#output{
+	margin-top: 3.3vh;
+	width: 40vw;
+}
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header img{
+	width: 4vw;
+	margin-right: 1vw;
+	border-radius: 50%;
+}
+
+h1, h3 {
+	text-align: center;
+	font-family: "Trebuchet MS";
+}
+
+form {
+	font-family: calibri;
+}
+
+#brgy, #province, #userEmail, #userName, #pw1 {
+	margin-bottom: 5px;
+}
+
+select {
+	margin-bottom: 10px;
+}
+
+#firstName, #country, #pw2, #birthDate  {
+	margin-bottom: 20px;
+}
+
+#zipcod {
+	width: 50px;
+}
+
+#lastName, #gender, #street, #brgy, #city, #province, #pw1{
+	margin-right: 1vw;
+}
+
